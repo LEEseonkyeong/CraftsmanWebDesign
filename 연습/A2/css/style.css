@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /* sub_bg positioning */
+}
+
+/* header 영역 */
+#header {
+    height: 100px;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.logo {
+    width: 200px;
+}
+
+/* nav */
+.nav {
+    align-self: self-end !important;
+}
+
+.main {}
+
+.main>li {
+    display: inline-block;
+    position: relative;
+}
+
+.main>li>a {
+    display: block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1fb61f;
+    transition: all 0.2s;
+}
+
+.main>li:hover>a {
+    color: #065f06;
+    background-color: #1fb61f80;
+}
+
+.sub {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    z-index: 4;
+    /* display: none; */
+}
+
+.sub li {}
+
+.sub li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f06938;
+    color: white;
+    transition: all 0.2s;
+}
+
+.sub li a:hover {
+    background-color: #ffffff80;
+}
+
+
+
+
+/* sub_bg 영역 */
+.sub_bg {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #f06938;
+    z-index: 3;
+    /* display: none; */
+}
+
+
+
+
+/* section 영역 */
+#section {
+    height: 500px;
+    /* background-color: brown; */
+}
+
+/* slide_img */
+.slide_img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left_move {
+    width: calc(1200px * 3);
+    /* width: 3600px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.left_move li {
+    float: left;
+}
+
+/* contents */
+.contents{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents> div{
+    width: 390px;
+    height: 200px;
+}
+
+.contents h3{
+    width: 100px;
+    height: 30px;
+    background-color: #f06938;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px 10px 0 0;
+    margin: 5px 0 0 20px;
+}
+
+.contents ul, .contents p{
+    width: 100%;
+    height: 165px;
+    border-top: 2px solid #f06938;
+    /* border-radius: 10px; */
+}
+
+/* notice */
+.notice{}
+.notice ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.notice ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.notice ul li a{
+    width: 75%;
+
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.notice ul li:hover a{
+    color: #000000;
+}
+
+.notice ul li span{}
+
+/* gallery */
+.gallery{}
+.gallery ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery ul li{}
+.gallery ul li a{}
+.gallery ul li a img{}
+
+/* banner */
+.banner{}
+.banner p{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner p a{}
+
+
+/* footer 영역 */
+#footer {
+    height: 100px;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.f_logo{}
+.copy{
+    width: 500px;
+    border-left: 1px dotted lightgray;
+    border-right: 1px dotted lightgray;
+    text-align: center;
+}
+.family{}
+
+.family select{
+    height: 30px;
+}
+
+
+
+
+/* modal pop_up 영역 */
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000080;
+    position: absolute;
+    left: 0;top: 0;
+    display: none;
+}
+
+.pop_up{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border: 10px double #065f06;
+    display: none;
+}
+
+.pop_up h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.pop_up p{
+    padding: 20px 0;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.close{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    background-color: #065f06;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
