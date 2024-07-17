@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+}
+
+
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* header 영역 */
+#header {
+    height: 100px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {}
+
+.nav {}
+
+.main {}
+
+.main>li {
+    display: inline-block;
+    position: relative;
+}
+
+.main>li>a {
+    display: block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2c63b6;
+}
+
+.main>li:hover>a {
+    background-color: #ffee0080;
+    border-radius: 20px;
+}
+
+.sub {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 10;
+}
+
+.sub li {}
+
+.sub li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333333;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.sub li:first-child a {
+    border-radius: 20px 20px 0 0;
+}
+
+.sub li:last-child a {
+    border-radius: 0 0 20px 20px;
+}
+
+.sub li a:hover {
+    background-color: #ffee00;
+    color: #2c63b6;
+    font-weight: 600;
+}
+
+
+/* slide_img 영역 */
+#slide_img {
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    /* .fade li positioning */
+}
+
+.fade {}
+
+.fade li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fade li a {}
+
+.fade li a img {}
+
+
+/* content 영역 */
+#content {
+    height: 200px;
+    /* background-color: cornsilk; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#content>div {
+    width: 390px;
+    height: 200px;
+}
+
+#content h2 {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-color: #ffee00;
+    color: #2c63b6;
+}
+
+#content p {
+    width: 100%;
+    height: calc(200px - 30px);
+    border-top: 3px solid #ffee00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 10px;
+}
+
+#content p img {
+    filter: sepia();
+    border-radius: 5px;
+}
+
+#content p img:hover {
+    filter: none;
+}
+
+.cont1 {
+    position: relative;
+}
+
+.cont1 h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.cont1 h2.b_on {
+    background-color: #ffee0030 !important;
+    color: #2c63b6 !important;
+}
+
+.cont1 ul {
+    width: 100%;
+    height: calc(200px - 30px);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    border-top: 3px solid #ffee00;
+    border-radius: 0 10px 10px 10px;
+}
+
+.notice {}
+
+.notice ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.notice ul li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #ddd;
+}
+
+.notice ul li a {
+    width: 70%;
+
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.notice ul li span {}
+
+.gallery {}
+
+.gallery h2 {
+    left: 105px;
+}
+
+.gallery ul {
+    /* display: flex; */
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+
+    .gallery ul li {}
+}
+
+.gallery ul li a {}
+
+.gallery ul li a img {
+    border-radius: 5px;
+}
+
+.cont2 {}
+
+.cont3 {}
+
+
+/* footer 영역 */
+#footer {
+    height: 100px;
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f_logo {
+    width: 200px;
+}
+
+.f_right {
+    width: 1000px;
+}
+
+.f_right>div {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.f_up {
+    border-bottom: 1px dotted #ddd;
+}
+
+.f_up a {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+    line-height: normal;
+}
+
+.f_up a:last-child {
+    border-right: none;
+}
+
+.f_up a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* pop 영역 */
+.pop {
+    width: 500px;
+    height: 300px;
+    background-color: #e4efff;
+    border: 10px double #333333;
+    box-shadow: 1px 1px 5px #00000080;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop h3 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.pop p {
+    text-align: justify;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    padding: 20px;
+}
