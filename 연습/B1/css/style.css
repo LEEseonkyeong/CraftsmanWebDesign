@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+}
+
+
+#wrap {}
+
+
+/* header 영역 */
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+.head_inner {
+    width: 1200px;
+    height: 100%;
+    /* background-color: blue; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.logo {}
+
+.logo a {}
+
+.logo a img {}
+
+.nav {}
+
+.main {
+    display: flex;
+}
+
+.main>li {
+    position: relative;
+}
+
+.main>li>a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    /* background-color: blue; */
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.main>li:hover>a {
+    text-shadow: 3px 3px 0px #daa52080;
+}
+
+.sub {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top: 40px;
+    left: 0;
+    background-color: #333333;
+    z-index: 10;
+    display: none;
+}
+
+.sub li {}
+
+.sub li a {
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.sub li a:hover {
+    background-color: #daa520;
+}
+
+
+/* container 영역 */
+.container {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.slide_img {
+    height: 300px;
+    position: relative;
+    /* overflow: hidden;
+     */
+}
+
+.left_move {
+    width: 3600px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.left_move li {
+    width: 1200px;
+    height: 300px;
+    float: left;
+}
+
+.contents {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents>div {
+    width: 390px;
+    height: 200px;
+    background-color: rgb(110, 73, 73);
+}
+
+.cont1 {
+    position: relative;
+}
+
+.cont1 h2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: gray;
+    font-size: 16px;
+    border: 1px solid black;
+    border-bottom: unset;
+    cursor: pointer;
+
+}
+
+.cont1 h2.on {
+    background-color: white;
+}
+
+.cont1 ul {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 170px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.notice {}
+
+.notice ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notice ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice ul li a {
+    width: 70%;
+
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.notice ul li span {
+    width: 30%;
+    text-align: right;
+}
+
+.gallery {}
+
+.gallery h2 {
+    left: 85px;
+}
+
+.gallery ul {
+    display: none;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery li {}
+
+.gallery li a {}
+
+.gallery li a img {}
+
+.cont2,
+.cont3 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cont2 p,
+.cont3 p {}
+
+.cont2 p a,
+.cont3 p a {
+    display: inline-block;
+    width: 90%;
+}
+
+.cont2 img,
+.cont3 img {
+    width: 100%;
+}
+
+
+/* footer 영역 */
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+}
+
+.foot_inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted gray;
+}
+
+.f_logo {}
+
+.f_right {
+    width: 800px;
+    height: 100px;
+}
+
+.f_menu {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f_menu a {
+    padding-left: 20px;
+}
+
+.f_menu a:hover{
+    text-decoration: underline;
+}
+
+.f_copy {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}

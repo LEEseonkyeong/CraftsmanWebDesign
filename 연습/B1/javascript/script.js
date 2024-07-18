@@ -1,0 +1,3 @@
+$(FocusEvent(){
+    
+}) // jQuery
